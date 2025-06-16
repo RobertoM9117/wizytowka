@@ -15,7 +15,7 @@ header h1 {
   text-align: center;
   font-size: 3em;
   color: #fefefe;
-  text-shadow: none;
+  text-shadow: 0 0 5px #00f0ff;
 }
 
 .profile {
