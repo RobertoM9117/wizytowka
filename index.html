@@ -31,6 +31,27 @@
       <button type="submit">Wyślij</button>
     </form>
   </section>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("BF-IklI9SUKS7weAG"); // Zamień później na swój publiczny klucz
+  })();
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_xp6cstj', 'template_42gdbzo', e.target)
+      .then(() => {
+        alert('Wiadomość wysłana! ✉️');
+        e.target.reset();
+      }, (error) => {
+        alert('Błąd podczas wysyłania 😿');
+        console.log(error);
+      });
+  }
+
+  document.querySelector("form").addEventListener("submit", sendEmail);
+</script>
 </body>
 </html>
 <!-- odświeżenie GitHub Pages -->
