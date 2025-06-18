@@ -106,3 +106,12 @@ button:hover {
   height: auto;
   z-index: 1000;
 }
+.opis {
+  font-size: 18px;
+  color: #ccc;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 1.6;
+  font-family: 'Orbitron', sans-serif;
+}
